@@ -2314,3 +2314,61 @@ textarea.input {
   color: #555;
 }
 
+
+/* When the heart is in the 'active' state, it turns red */
+/* .add-to-wishlist.active .fa-heart-o {
+  color: red;
+} */
+
+
+/* Styling the product container */
+.product-container {
+  display: flex;
+  gap: 20px;
+}
+
+/* Ensure the image container has overflow hidden to clip the zoom effect */
+.product-image {
+  overflow: hidden;
+  width: 300px; /* Set the desired width for the image */
+  height: 300px; /* Set the desired height for the image */
+  border-radius: 10px; /* Optional: for rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: add a shadow */
+}
+
+/* Styling the image */
+.product-image img {
+  width: 100%; /* Ensure the image takes full container width */
+  height: 100%; /* Ensure the image takes full container height */
+  object-fit: cover; /* Keep aspect ratio and fill container */
+  transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+}
+
+/* On hover, scale up the image */
+.product-image:hover img {
+  transform: scale(1.2); /* Scale image to 120% */
+}
+
+/* Container for the zoom effect */
+.zoom-container {
+  position: relative;
+  width: 400px; /* Adjust to your image dimensions */
+  height: 400px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  cursor: zoom-in; /* Indicate zoom effect */
+}
+
+/* Image styling */
+.zoom-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease; /* Smooth zoom */
+}
+
+/* Zoom effect on hover */
+.zoom-container:hover img {
+  transform: scale(2); /* Zoom level */
+  transform-origin: center; /* Keep the zoom centered */
+}

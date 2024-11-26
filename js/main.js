@@ -12,6 +12,7 @@
 		e.stopPropagation();
 	});
 
+
 	/////////////////////////////////////////
 
 	// Products Slick
@@ -45,7 +46,8 @@
 	    ]
 		});
 	});
-
+	
+	
 	// Products Widget Slick
 	$('.products-widget-slick').each(function() {
 		var $this = $(this),
