@@ -61,10 +61,10 @@
 							</a>
 						</li>
 					</ul>
-					<ul class="header-links pull-right">
+					<!-- <ul class="header-links pull-right">
 						<li><a href="#"><i class="fa fa-dollar"></i> INR</a></li>
 						<li><a href="#"><i class="fa fa-user-o"></i> My Account</a></li>
-					</ul>
+					</ul> -->
 				</div>
 			</div>
 			<!-- /TOP HEADER -->
@@ -79,7 +79,7 @@
 						<div class="col-md-3">
 							<div class="header-logo">
 								<a href="#" class="logo">
-									<img src="./img/logo.png" alt="">
+									<img src="../img/logo.png" alt="">
 								</a>
 							</div>
 						</div>
@@ -88,15 +88,15 @@
 						<!-- SEARCH BAR -->
 						<div class="col-md-6">
 							<div class="header-search">
-								<form>
+								<form id="searchForm">
 									<select class="input-select">
 										<option value="0">All Categories</option>
-										<option value="1">Category 01</option>
-										<option value="1">Category 02</option>
 									</select>
-									<input class="input" placeholder="Search here">
-									<button class="search-btn">Search</button>
+									<input class="input" id="searchInput" placeholder="Search here">
+									<button type="submit" class="search-btn">Search</button>
 								</form>
+							
+								<div id="searchResults"></div>
 							</div>
 						</div>
 						<!-- /SEARCH BAR -->
@@ -106,21 +106,23 @@
 							<div class="header-ctn">
 								<!-- Wishlist -->
 								<div>
-									<a href="#">
+									<!-- <a href="#">
 										<i class="fa fa-heart-o"></i>
 										<span>Your Wishlist</span>
 										<div class="qty">2</div>
-									</a>
+									</a> -->
 								</div>
 								<!-- /Wishlist -->
 
 								<!-- Cart -->
 								<div class="dropdown">
-									<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+									<!-- <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
 										<i class="fa fa-shopping-cart"></i>
 										<span>Your Cart</span>
 										<div class="qty">3</div>
-									</a>
+									</a> -->
+									<br>
+									<h4 style="color: lightslategray;">Service at your Doorstep</h4>
 									<!-- <div class="cart-dropdown">
 										<div class="cart-list">
 											<div class="product-widget">
@@ -241,7 +243,7 @@
 			<div class="col-md-3 col-xs-6">
 				<div class="product">
 					<div class="product-img">
-						<img src="./img/a1.jpg" alt="">
+						<img src="../img/a1.jpg" alt="">
 						<div class="product-label">
 							<!-- <span class="sale">-30%</span> -->
 						</div>
@@ -249,7 +251,7 @@
 					<div class="product-body">
 						<!-- <p class="product-category">Category</p> -->
 						<h3 class="product-name"><a href="#">Rubber Pad</a></h3>
-						<h4 class="product-price">8000 INR <del class="product-old-price">10000 INR</del></h4>
+						<h4 class="product-price">600 INR <del class="product-old-price">1</del></h4>
 						<div class="product-rating">
 						</div>
 						<div class="product-rating">
@@ -276,7 +278,7 @@
 			<div class="col-md-3 col-xs-6">
 				<div class="product">
 					<div class="product-img">
-						<img src="./img/a2.png" alt="">
+						<img src="../img/a2.png" alt="">
 						<div class="product-label">
 							<span class="new">NEW</span>
 						</div>
@@ -284,7 +286,7 @@
 					<div class="product-body">
 						<!-- <p class="product-category">Category</p> -->
 						<h3 class="product-name"><a href="#">Colour Sensor</a></h3>
-						<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+						<h4 class="product-price">3000 INR <del class="product-old-price"></del></h4>
 						<div class="product-rating">
 							<i class="fa fa-star"></i>
 							<i class="fa fa-star"></i>
@@ -309,12 +311,12 @@
 			<div class="col-md-3 col-xs-6">
 				<div class="product">
 					<div class="product-img">
-						<img src="./img/a3.png" alt="">
+						<img src="../img/a3.png" alt="">
 					</div>
 					<div class="product-body">
 						<!-- <p class="product-category">Category</p> -->
 						<h3 class="product-name"><a href="#">DC Motor</a></h3>
-						<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+						<h4 class="product-price">1200 INR <del class="product-old-price"></del></h4>
 						<div class="product-rating">
 							<i class="fa fa-star"></i>
 							<i class="fa fa-star"></i>
@@ -337,12 +339,12 @@
 			<div class="col-md-3 col-xs-6">
 				<div class="product">
 					<div class="product-img">
-						<img src="./img/a4.png" alt="">
+						<img src="../img/a4.png" alt="">
 					</div>
 					<div class="product-body">
 						<!-- <p class="product-category">Category</p> -->
 						<h3 class="product-name"><a href="#">Rubber Wheels</a></h3>
-						<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+						<h4 class="product-price">1200 INR <del class="product-old-price"></del></h4>
 						<div class="product-rating">
 						</div>
 						<div class="product-rating">
@@ -375,7 +377,7 @@
 			<div class="col-md-3 col-xs-6">
 				<div class="product">
 					<div class="product-img">
-						<img src="./img/a5.png" alt="">
+						<img src="../img/a5.png" alt="">
 						<div class="product-label">
 							<!-- <span class="sale">-30%</span> -->
 						</div>
@@ -383,7 +385,7 @@
 					<div class="product-body">
 						<!-- <p class="product-category">Category</p> -->
 						<h3 class="product-name"><a href="#">Hopper Sensor</a></h3>
-						<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+						<h4 class="product-price">640 INR <del class="product-old-price"></del></h4>
 						<div class="product-rating">
 						</div>
 						<div class="product-rating">
@@ -407,7 +409,7 @@
 			<div class="col-md-3 col-xs-6">
 				<div class="product">
 					<div class="product-img">
-						<img src="./img/a6.png" alt="">
+						<img src="../img/a6.png" alt="">
 						<div class="product-label">
 							<span class="new">NEW</span>
 						</div>
@@ -415,7 +417,7 @@
 					<div class="product-body">
 						<!-- <p class="product-category">Category</p> -->
 						<h3 class="product-name"><a href="#">Mother Board</a></h3>
-						<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+						<h4 class="product-price">2500 INR <del class="product-old-price"></del></h4>
 						<div class="product-rating">
 							<i class="fa fa-star"></i>
 							<i class="fa fa-star"></i>
@@ -440,12 +442,12 @@
 			<div class="col-md-3 col-xs-6">
 				<div class="product">
 					<div class="product-img">
-						<img src="./img/a7.png" alt="">
+						<img src="../img/a7.png" alt="">
 					</div>
 					<div class="product-body">
 						<!-- <p class="product-category">Category</p> -->
 						<h3 class="product-name"><a href="#"> Sensor Receiver</a></h3>
-						<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+						<h4 class="product-price">2500 INR <del class="product-old-price"></del></h4>
 						<div class="product-rating">
 							<i class="fa fa-star"></i>
 							<i class="fa fa-star"></i>
@@ -468,12 +470,12 @@
 			<div class="col-md-3 col-xs-6">
 				<div class="product">
 					<div class="product-img">
-						<img src="./img/a8.png" alt="">
+						<img src="../img/a8.png" alt="">
 					</div>
 					<div class="product-body">
 						<!-- <p class="product-category">Category</p> -->
 						<h3 class="product-name"><a href="#">Display Board</a></h3>
-						<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+						<h4 class="product-price">2100 INR <del class="product-old-price"></del></h4>
 						<div class="product-rating">
 						</div>
 						
@@ -634,6 +636,94 @@
 		<script src="../js/nouislider.min.js"></script>
 		<script src="../js/jquery.zoom.min.js"></script>
 		<script src="../js/main.js"></script>
+
+		<script>
+			// Predefined data
+			const machines = [
+				{
+					id: 1,
+					name: "Ease 1000",
+					description: "High-speed counting machine",
+					image: "https://via.placeholder.com/150", // Replace with actual image URLs
+					pageUrl: "../ccmpage/" // Redirect URL for Ease1000
+				},
+				{
+					id: 2,
+					name: "Smart 2000",
+					description: "Currency counter with advanced features",
+					image: "https://via.placeholder.com/150",
+					pageUrl: "../ccmpage/"
+				},
+				{
+					id: 3,
+					name: "Ease3000",
+					description: "Compact counting machine for small businesses",
+					image: "https://via.placeholder.com/150",
+					pageUrl: "/ease3000page/"
+				},
+				{
+					id: 3,
+					name: "Ease3000",
+					description: "Compact counting machine for small businesses",
+					image: "https://via.placeholder.com/150",
+					pageUrl: "/ease3000page/"
+				},
+				{
+					id: 3,
+					name: "Ease3000",
+					description: "Compact counting machine for small businesses",
+					image: "https://via.placeholder.com/150",
+					pageUrl: "/ease3000page/"
+				},
+				{
+					id: 3,
+					name: "Ease3000",
+					description: "Compact counting machine for small businesses",
+					image: "https://via.placeholder.com/150",
+					pageUrl: "/ease3000page/"
+				},
+				{
+					id: 3,
+					name: "Ease3000",
+					description: "Compact counting machine for small businesses",
+					image: "https://via.placeholder.com/150",
+					pageUrl: "/ease3000page/"
+				},
+				{
+					id: 3,
+					name: "Ease3000",
+					description: "Compact counting machine for small businesses",
+					image: "https://via.placeholder.com/150",
+					pageUrl: "/ease3000page/"
+				}
+
+			];
+	
+			// Handle search functionality
+			document.getElementById("searchForm").addEventListener("submit", function (event) {
+				event.preventDefault(); // Prevent page reload
+				
+				const query = document.getElementById("searchInput").value.toLowerCase();
+				const resultsDiv = document.getElementById("searchResults");
+				resultsDiv.innerHTML = ""; // Clear previous results
+	
+				if (query.trim() !== "") {
+					const filteredMachines = machines.filter(machine =>
+						machine.name.toLowerCase().includes(query)
+					);
+	
+					if (filteredMachines.length > 0) {
+						// If a machine matches, redirect to its page
+						const matchedMachine = filteredMachines[0];
+						window.location.href = matchedMachine.pageUrl;
+					} else {
+						resultsDiv.innerHTML = "<div class='no-results'>No results found.</div>";
+					}
+				} else {
+					resultsDiv.innerHTML = "<div class='no-results'>Please enter a search term.</div>";
+				}
+			});
+		</script>
 
 	</body>
 </html>
