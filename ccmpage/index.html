@@ -34,6 +34,19 @@
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 
+		<style>
+    .filled-star {
+        color: #f39c12;
+        font-size: 18px;
+    }
+    .empty-star {
+        color: #ccc;
+        font-size: 18px;
+    }
+
+</style>
+
+
     </head>
 	<body>
 		<!-- HEADER -->
@@ -104,6 +117,15 @@
 							<br>
 							<h4 style="color: lightslategray;">Service at your Doorstep</h4>
 						</div>
+
+						<!-- Menu Toogle -->
+						<div class="menu-toggle">
+							<a href="#">
+								<i class="fa fa-bars"></i>
+								<span>Menu</span>
+							</a>
+						</div>
+						<!-- /Menu Toogle -->
 					</div>
 					<!-- row -->
 				</div>
@@ -438,19 +460,19 @@
 														</div>
 													</li>
 												</ul>
-												<ul class="reviews-pagination">
+												<!-- <ul class="reviews-pagination">
 													<li class="active">1</li>
 													<li><a href="#">2</a></li>
 													<li><a href="#">3</a></li>
 													<li><a href="#">4</a></li>
 													<li><a href="#"><i class="fa fa-angle-right"></i></a></li>
-												</ul>
+												</ul> -->
 											</div>
 										</div>
 										<!-- /Reviews -->
 
 										<!-- Review Form -->
-										<div class="col-md-3">
+										<!-- <div class="col-md-3">
 											<div id="review-form">
 												<form class="review-form">
 													<input class="input" type="text" placeholder="Your Name">
@@ -466,11 +488,54 @@
 															<input id="star1" name="rating" value="1" type="radio"><label for="star1"></label>
 														</div>
 													</div>
-													<button class="primary-btn">Submit</button>
-												</form>
+													<button class="primary-btn">Submit</button> -->
+												<!-- </form>
+											</div>
+										</div> -->
+										<!-- /Review Form -->
+										 <!-- Review Form -->
+											<div class="col-md-3">
+												<div id="review-form">
+													<form class="review-form" id="reviewForm">
+														<input class="input" type="text" id="reviewerName" placeholder="Your Name" required>
+														<input class="input" type="email" id="reviewerEmail" placeholder="Your Email" required>
+														<textarea class="input" id="reviewText" placeholder="Your Review" required></textarea>
+														<div class="input-rating">
+															<span>Your Rating: </span>
+															<div class="stars">
+																<input id="star5" name="rating" value="5" type="radio"><label for="star5"></label>
+																<input id="star4" name="rating" value="4" type="radio"><label for="star4"></label>
+																<input id="star3" name="rating" value="3" type="radio"><label for="star3"></label>
+																<input id="star2" name="rating" value="2" type="radio"><label for="star2"></label>
+																<input id="star1" name="rating" value="1" type="radio"><label for="star1"></label>
+															</div>
+														</div>
+														<button class="primary-btn" type="submit">Submit</button>
+													</form>
+												</div>
+											</div>
+
+											<!-- Reviews Section -->
+											<div class="col-md-6">
+												<div id="reviews">
+													<h3>Reviews (<span id="reviewCount">0</span>)</h3>
+													<div id="averageRating">Average Rating: 0</div>
+													<ul id="reviewList">
+														<!-- Reviews will appear here -->
+													</ul>
+												</div>
+											</div>
+										<!-- /Review Form -->
+
+										<!-- Display Reviews -->
+										<div class="col-md-6">
+											<div id="reviews">
+												<h3>Reviews</h3>
+												<ul id="reviewList">
+													<!-- Reviews will appear here -->
+												</ul>
 											</div>
 										</div>
-										<!-- /Review Form -->
 									</div>
 								</div>
 								<!-- /tab3  -->
@@ -486,151 +551,6 @@
 		</div>
 		<!-- /SECTION -->
 
-		<!-- Section -->
-		<div class="section">
-			<!-- container -->
-			<div class="container">
-				<!-- row -->
-				<div class="row">
-
-					<div class="col-md-12">
-						<div class="section-title text-center">
-							<h3 class="title">Related Products</h3>
-						</div>
-					</div>
-
-					<!-- product -->
-					<div class="col-md-3 col-xs-6">
-						<div class="product">
-							<div class="product-img">
-								<img src="../img/ccm2.jpg" alt="">
-								<div class="product-label">
-									<!-- <span class="sale">-30%</span> -->
-								</div>
-							</div>
-							<div class="product-body">
-								<p class="product-category">Category</p>
-								<h3 class="product-name"><a href="#">Mix value ULTRA</a></h3>
-								<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
-								<div class="product-rating">
-								</div>
-								<div class="product-btns">
-									<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
-									<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
-									<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
-								</div>
-							</div>
-							<div class="add-to-cart">
-								<a href="ccmpage.html" class="add-to-cart-btn">
-									<i class="fa fa-shopping-cart"></i> Show Details
-								</a>
-							</div>
-						</div>
-					</div>
-					<!-- /product -->
-
-					<!-- product -->
-					<div class="col-md-3 col-xs-6">
-						<div class="product">
-							<div class="product-img">
-								<img src="../img/ccm4.jpg" alt="">
-								<div class="product-label">
-									<span class="new">NEW</span>
-								</div>
-							</div>
-							<div class="product-body">
-								<p class="product-category">Category</p>
-								<h3 class="product-name"><a href="#">Mix value PRIME</a></h3>
-								<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
-								<div class="product-rating">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-								<div class="product-btns">
-									<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
-									<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
-									<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
-								</div>
-							</div>
-							<div class="add-to-cart">
-								<a href="ccmpage.html" class="add-to-cart-btn">
-									<i class="fa fa-shopping-cart"></i> Show Details
-								</a>
-							</div>
-						</div>
-					</div>
-					<!-- /product -->
-
-					<div class="clearfix visible-sm visible-xs"></div>
-
-					<!-- product -->
-					<div class="col-md-3 col-xs-6">
-						<div class="product">
-							<div class="product-img">
-								<img src="../img/ccm3.jpg" alt="">
-							</div>
-							<div class="product-body">
-								<p class="product-category">Category</p>
-								<h3 class="product-name"><a href="#">Smart 2000</a></h3>
-								<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
-								<div class="product-rating">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star-o"></i>
-								</div>
-								<div class="product-btns">
-									<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
-									<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
-									<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
-								</div>
-							</div>
-							<div class="add-to-cart">
-								<a href="ccmpage.html" class="add-to-cart-btn">
-									<i class="fa fa-shopping-cart"></i> Show Details
-								</a>
-							</div>
-						</div>
-					</div>
-					<!-- /product -->
-
-					<!-- product -->
-					<div class="col-md-3 col-xs-6">
-						<div class="product">
-							<div class="product-img">
-								<img src="../img/ccm7.jpg" alt="">
-							</div>
-							<div class="product-body">
-								<p class="product-category">Category</p>
-								<h3 class="product-name"><a href="#">Smart with side display</a></h3>
-								<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
-								<div class="product-rating">
-								</div>
-								<div class="product-btns">
-									<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
-									<button class="add-to-compare"><i class="fa fa-exchange"></i><span class="tooltipp">add to compare</span></button>
-									<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">quick view</span></button>
-								</div>
-							</div>
-							<div class="add-to-cart">
-								<a href="ccmpage.html" class="add-to-cart-btn">
-									<i class="fa fa-shopping-cart"></i> Show Details
-								</a>
-							</div>
-						</div>
-					</div>
-					<!-- /product -->
-
-				</div>
-				<!-- /row -->
-			</div>
-			<!-- /container -->
-		</div>
-		<!-- /Section -->
 
 		<!-- NEWSLETTER -->
 		<div id="newsletter" class="section">
@@ -679,11 +599,11 @@
 						<div class="col-md-3 col-xs-6">
 							<div class="footer">
 								<h3 class="footer-title">About Us</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+								<p>With a focus on efficiency and customer satisfaction, we aim to simplify cash handling and support our clients' operational needs</p>
 								<ul class="footer-links">
-									<li><a href="#"><i class="fa fa-map-marker"></i>1734 Stonecoal Road</a></li>
-									<li><a href="#"><i class="fa fa-phone"></i>+021-95-51-84</a></li>
-									<li><a href="#"><i class="fa fa-envelope-o"></i>email@email.com</a></li>
+									<li><a href="https://www.google.com/maps/place/Cash+Counting+Machine's+(Best+Electronic's)/@17.4717217,78.5183564,15z/data=!3m1!4b1!4m6!3m5!1s0x3bcb9bea9d4e8c53:0x5c71e71f1ea2f617!8m2!3d17.4717226!4d78.5368105!16s%2Fg%2F11d_wy2j9x?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D"><i class="fa fa-map-marker"></i>Ecil, Dinakar Nagar</a></li>
+									<li><a href="https://wa.me/919553729939"><i class="fa fa-phone"></i>+919553729939</a></li>
+									<li><a href="mailto:bestelectronicsccm@gmail.com"><i class="fa fa-envelope-o"></i>bestelectronicsccm@gmail.com</a></li>
 								</ul>
 							</div>
 						</div>
@@ -692,9 +612,9 @@
 							<div class="footer">
 								<h3 class="footer-title">Categories</h3>
 								<ul class="footer-links">
-									<li><a href="#">Hot deals</a></li>
-									<li><a href="#">Laptops</a></li>
-									<li><a href="#">Smartphones</a></li>
+									<li><a href="/">Hot deals</a></li>
+									<li><a href="../product/">Products</a></li>
+									<li><a href="../product/">Machines</a></li>
 									<li><a href="#">Cameras</a></li>
 									<li><a href="#">Accessories</a></li>
 								</ul>
@@ -707,15 +627,14 @@
 							<div class="footer">
 								<h3 class="footer-title">Information</h3>
 								<ul class="footer-links">
-									<li><a href="#">About Us</a></li>
-									<li><a href="#">Contact Us</a></li>
+									<li><a href="../about/">About Us</a></li>
+									<li><a href="../contactus">Contact Us</a></li>
 									<li><a href="#">Privacy Policy</a></li>
 									<li><a href="#">Orders and Returns</a></li>
 									<li><a href="#">Terms & Conditions</a></li>
 								</ul>
 							</div>
 						</div>
-
 						<div class="col-md-3 col-xs-6">
 							<div class="footer">
 								<h3 class="footer-title">Service</h3>
@@ -728,6 +647,7 @@
 								</ul>
 							</div>
 						</div>
+						
 					</div>
 					<!-- /row -->
 				</div>
@@ -764,6 +684,7 @@
 		</footer>
 		<!-- /FOOTER -->
 
+
 		<!-- jQuery Plugins -->
 		<script src="../js/jquery.min.js"></script>
 		<script src="../js/bootstrap.min.js"></script>
@@ -787,49 +708,35 @@
 					name: "Smart 2000",
 					description: "Currency counter with advanced features",
 					image: "https://via.placeholder.com/150",
-					pageUrl: "../ccmpage/"
+					pageUrl: "../ccm2/"
 				},
 				{
 					id: 3,
-					name: "Ease3000",
+					name: "Bundle Note",
 					description: "Compact counting machine for small businesses",
 					image: "https://via.placeholder.com/150",
-					pageUrl: "/ease3000page/"
+					pageUrl: "../ccm8/"
 				},
 				{
 					id: 3,
-					name: "Ease3000",
+					name: "Prime",
 					description: "Compact counting machine for small businesses",
 					image: "https://via.placeholder.com/150",
-					pageUrl: "/ease3000page/"
+					pageUrl: "../ccm11/"
 				},
 				{
 					id: 3,
-					name: "Ease3000",
+					name: "Ultra",
 					description: "Compact counting machine for small businesses",
 					image: "https://via.placeholder.com/150",
-					pageUrl: "/ease3000page/"
+					pageUrl: "../ccm7/"
 				},
 				{
 					id: 3,
-					name: "Ease3000",
+					name: "Micro",
 					description: "Compact counting machine for small businesses",
 					image: "https://via.placeholder.com/150",
-					pageUrl: "/ease3000page/"
-				},
-				{
-					id: 3,
-					name: "Ease3000",
-					description: "Compact counting machine for small businesses",
-					image: "https://via.placeholder.com/150",
-					pageUrl: "/ease3000page/"
-				},
-				{
-					id: 3,
-					name: "Ease3000",
-					description: "Compact counting machine for small businesses",
-					image: "https://via.placeholder.com/150",
-					pageUrl: "/ease3000page/"
+					pageUrl: "../ccm10/"
 				}
 
 			];
@@ -859,6 +766,105 @@
 				}
 			});
 		</script>
+
+
+		<!-- JavaScript -->
+<!-- <script>
+    document.getElementById('reviewForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        // Get form values
+        const name = document.getElementById('reviewerName').value;
+        const email = document.getElementById('reviewerEmail').value;
+        const review = document.getElementById('reviewText').value;
+        const rating = document.querySelector('input[name="rating"]:checked')?.value || 'No rating';
+
+        // Create a new review element
+        const reviewItem = document.createElement('li');
+        reviewItem.innerHTML = `
+            <strong>${name} (${email})</strong>
+            <p>${review}</p>
+            <span>Rating: ${rating} stars</span>
+        `;
+
+        // Add the review to the list
+        document.getElementById('reviewList').appendChild(reviewItem);
+
+        // Clear the form
+        document.getElementById('reviewForm').reset();
+    });
+</script> -->
+<script>
+    let reviews = [];
+    let totalRating = 0;
+
+    function calculateAverageRating() {
+    if (reviews.length > 0) {
+        const avg = totalRating / reviews.length;
+        document.getElementById('averageRating').innerHTML = `Average Rating: ${avg.toFixed(1)}`;
+    } else {
+        document.getElementById('averageRating').innerHTML = `Average Rating: N/A`;
+    }
+}
+
+    function displayReviews() {
+        const reviewList = document.getElementById('reviewList');
+        reviewList.innerHTML = '';  // Clear the list before adding new reviews
+
+        reviews.forEach((review) => {
+            const reviewItem = document.createElement('li');
+            const ratingStars = createRatingStars(review.rating);
+
+            reviewItem.innerHTML = `
+                <div><strong>${review.name}</strong> - <span>${review.date}</span></div>
+                <div>${review.text}</div>
+                <div>${ratingStars}</div>
+            `;
+
+            reviewList.appendChild(reviewItem);
+        });
+
+        document.getElementById('reviewCount').textContent = reviews.length;
+        calculateAverageRating();
+    }
+
+    function createRatingStars(rating) {
+        let stars = '';
+        for (let i = 1; i <= 5; i++) {
+            if (i <= rating) {
+                stars += '<span class="filled-star">★</span>';
+            } else {
+                stars += '<span class="empty-star">☆</span>';
+            }
+        }
+        return stars;
+    }
+
+    document.getElementById('reviewForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        // Get form values
+        const name = document.getElementById('reviewerName').value;
+        const email = document.getElementById('reviewerEmail').value;
+        const reviewText = document.getElementById('reviewText').value;
+        const rating = document.querySelector('input[name="rating"]:checked')?.value || 0;
+        const date = new Date().toLocaleString();
+
+        // Add the review to the reviews array
+        reviews.push({ name, email, text: reviewText, rating: parseInt(rating), date });
+        totalRating += parseInt(rating);
+
+        // Display updated reviews
+        displayReviews();
+
+        // Clear the form
+        document.getElementById('reviewForm').reset();
+    });
+
+    // Initial call to display reviews
+    displayReviews();
+</script>
+
 
 	</body>
 </html>
